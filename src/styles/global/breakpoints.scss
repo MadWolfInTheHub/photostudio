@@ -1,0 +1,22 @@
+@import './variables.scss';
+$sm: 600px;
+$md: 900px;
+$lg: 1200px;
+
+@mixin small-screen {
+  @media screen and (max-width: $sm) {
+      @content;
+  }
+}
+
+@mixin medium-screen {
+  @media screen and (min-width: $sm) and (max-width: $md) {
+      @content;
+  }
+}
+
+@mixin large-screen {
+  @media screen and (min-width: $md) {
+      @content;
+  }
+}

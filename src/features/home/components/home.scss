@@ -1,0 +1,82 @@
+@import '../../../styles/global/breakpoints.scss';
+
+.homePage {
+  margin: 100px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include small-screen {
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    justify-content: end;
+  }
+
+  &__intro {
+    font-size: 96px;
+    font-weight: 700;
+
+    @include small-screen {
+      font-size: 48px;
+      color: white;
+    }
+  }
+
+  &__about {
+    font-size: 32px;
+
+    @include small-screen {
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  &__nav {
+    &_btn {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 12px 24px;
+      color: black;
+      text-decoration: none;
+      font-size: 24px;
+      border: black 1px solid;
+      border-radius: 10px;
+      background-color: #D1D1D1;
+
+      &:first-child {
+        background-color: #1D1D1D;
+        color: white;
+      }
+
+      @include small-screen {
+        font-size: 16px;
+        padding: 10px 20px;
+
+        &:first-child {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.homePage-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  background-image: url(../../../../public/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include small-screen {
+    width: 100VW;
+    z-index: 0;
+  }
+}

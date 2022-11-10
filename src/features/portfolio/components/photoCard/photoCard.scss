@@ -1,0 +1,15 @@
+.photoCard {
+  margin-right: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  
+  &__img {
+    height: 60%;
+    margin-bottom: 15px;
+  }
+
+}

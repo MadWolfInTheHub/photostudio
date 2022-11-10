@@ -1,0 +1,57 @@
+.slider {
+  position: absolute;
+  top: 0;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scrollbar-width: 100px;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 30%;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: gray; 
+    border-radius: 5px;
+    margin-right: 70vw;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 20px;
+    background-color: black;    
+    border-radius: 20px;      
+    border: 3px solid black; 
+    cursor: pointer;
+  }
+}
+
+.gallery {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+
+  &__buttons {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &_btn {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
